@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="add">add</button>
+    <button id="zero">0</button>
+    <button id="sub">sub</button>
+    <script>
+        let count=0;
+        function a(){
+            count+=1;
+            return count;
+        }
+        function s(){
+            count-=1;
+            return count;
+        }
+        function reset(){
+            count=0;
+            return count;
+        }
+        add.addEventListener("click",()=>{
+            document.write("click",a);
+        });
+        zero.addEventListener("click",()=>{
+            document.write("click",reset);
+        });
+        sub.addEventListener("click",()=>{
+            document.write("click",s);
+        });
+
+    </script>
+    
+</body>
+</html>
